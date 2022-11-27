@@ -1,6 +1,6 @@
 import React from 'react';
-import Todo from './Todo';
-import classes from './Todo.module.css';
+import Todo from '../todo/Todo'
+import classes from './TodoList.module.scss';
 
 const TodoList = ({todos, setTodos, displayedTodos, titleEditing, descriptionEditing}) => {
     const handlerDeleteTodo = (id) => {

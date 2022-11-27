@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import { v4 as uuidv4 } from 'uuid';
-import classes from './EditableField.module.css';
+import classes from './EditableField.module.scss';
 
 const EditableField = ({ value, valueChange }) => {
     const [text, setText] = useState(value);
@@ -50,6 +50,8 @@ const EditableField = ({ value, valueChange }) => {
                         className={[classes.editable_field, classes.textarea].join(' ')}
                         value={text}
                         placeholder="Enter description"
+                        rows="8"
+                        cols="10"
                         onChange={(event) => setText(event.target.value)}
                         onClick={(event) => event.stopPropagation()}
                     >

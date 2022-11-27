@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import './App.css';
-import TodoForm from './components/todo/TodoForm';
-import SortTodo from './components/todo/SortTodo';
-import TodoList from './components/todo/TodoList';
+import './App.scss';
+import TodoForm from './components/todo/todoForm/TodoForm';
+import SortTodo from './components/todo/sortTodo/SortTodo';
+import TodoList from './components/todo/todoList/TodoList';
 
 function App() {
     const [creationDate, setCreationDate] = useState('');

@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './Todo.module.css';
+import classes from './SortTodo.module.scss';
 
 const SortTodo = ({ filterTodos, sortTodos }) => {
     return (
